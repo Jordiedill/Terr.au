@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { ImageBackground } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <ImageBackground 
+      source={{uri: 'https://images.wallpaperscraft.com/image/eclipse_moon_sun_129559_938x1668.jpg'}}
+      style={styles.container} 
+      >
+        <Text>
+          Space is cool
+        </Text>
+      </ImageBackground>
+    )
+  }
 }
 
 const styles = StyleSheet.create({
