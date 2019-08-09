@@ -7,7 +7,7 @@ const Venus = props => (
       style={{ width: 350, height: 350 }}
       source={{ uri: "https://media.giphy.com/media/eAMJgzoGAEwCc/giphy.gif" }}
     />
-    <Text style={styles.name}>Saturn</Text>
+    <Text style={styles.name}>Venus</Text>
     <Text style={styles.distance}>1.731 AU</Text>
     <Text style={styles.distance}>160,906,502 Miles</Text>
   </View>
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   distance: {
-    color: "#fff"
+    color: "#fff",
+    fontSize: 20
   },
   name: {
     color: "#fff",

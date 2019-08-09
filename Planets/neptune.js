@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   distance: {
-    color: "#fff"
+    color: "#fff",
+    fontSize: 20
   },
   name: {
     color: "#fff",
