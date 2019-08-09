@@ -25,7 +25,7 @@ import {
 const DrawerContains = props => (
   <ScrollView>
     <SafeAreaView style={styles.container} forceInset={{ top: 'always', horizontal: 'never', drawerBackgroundColor: 'transparent' }}>
-      <DrawerItems {...props} />
+      <DrawerItems {...props} style={styles.text} />
     </SafeAreaView>
   </ScrollView>
 );
@@ -50,7 +50,9 @@ const Drawers = createDrawerNavigator(
         flex: 1,
         drawerPosition: 'right',
         drawerWidth: 120
-    }
+    },
+
+  
   );
 
 
@@ -63,6 +65,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     textAlign: 'right'
   },
+  text: {
+    color: 'white'
+  }
 });
 
 const App = createAppContainer(Drawers)

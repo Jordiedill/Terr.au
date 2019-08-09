@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import axios from 'axios';
 import getEnvVars from '../environment';
 const { apiUrl } = getEnvVars();
@@ -50,10 +50,19 @@ export default class Mercury extends Component {
   render() {
       return(
           <View style={styles.container}>
-          <Text>
-              Mercury
+              <Image
+              style={{width: 350, height: 350}}
+              source={{uri: 'https://media.giphy.com/media/l0HlO4V8iCRME3i0g/giphy.gif'}}>
+
+              </Image>
+              <Text style={styles.name}>
+                  Mercury
+              </Text>
+          <Text style={styles.distance}>
               {this.state.au}
-              {this.state.mi}
+          </Text>
+          <Text style={styles.distance}>
+          {this.state.mi}
           </Text>
           </View>
       )
@@ -63,8 +72,18 @@ export default class Mercury extends Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#000000',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'center'
     },
+    distance: {
+        color:'#fff'
+    },
+    name: {
+        color:'#fff',
+        margin: 100,
+        fontSize: 40,
+        fontWeight: 'bold'
+
+      },
   });
