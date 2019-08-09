@@ -52,7 +52,12 @@ const Drawers = createDrawerNavigator(
     titleColor: "#fff",
     flex: 1,
     drawerPosition: "right",
-    drawerWidth: 120
+    drawerWidth: 120,
+    contentOptions: {
+      inactiveTintColor: "#fff",
+      textShadowColor: "white",
+      padding: 50
+    }
   }
 );
 
@@ -63,7 +68,7 @@ const styles = StyleSheet.create({
     textAlign: "right"
   },
   text: {
-    color: "white"
+    color: "#000000"
   }
 });
 

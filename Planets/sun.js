@@ -9,15 +9,20 @@ const Sun = props => (
     }}
     style={styles.container}
   >
-    <Text />
+    <Text style={styles.appName}>Terr.au</Text>
   </ImageBackground>
 );
-
+//
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+    backgroundColor: "#fff"
+  },
+  appName: {
+    color: "white",
+    fontSize: 50,
+    fontWeight: "bold",
+    margin: 100
   }
 });
 

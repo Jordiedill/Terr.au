@@ -8,7 +8,7 @@ const Earth = props => (
       source={{ uri: "https://media0.giphy.com/media/p0Tx9sBFyuYYU/giphy.gif" }}
     />
     <Text style={styles.name}>Earth</Text>
-    <Text style={styles.distance}>Hi</Text>
+    <Text style={styles.distance}>Mostly harmless</Text>
   </View>
 );
 
